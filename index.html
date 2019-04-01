@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Портфолио</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header" id="home">
-    <div class="menu">
+    <div class="menu" id="menu">
       <div class="container">
         <nav class="menu__nav">
           <a href="#home" class="menu__link">Главная</a>
-          <a href="#features" class="menu__link">Преимущества</a>
+          <a href="#features" class="menu__link">Предложения</a>
           <a href="#catalog" class="menu__link">Каталог</a>
           <a href="#price" class="menu__link">Цены и виды продукции</a>
           <a href="#steps" class="menu__link">Этапы работ</a>
@@ -27,14 +28,16 @@
   <div class="navbar">
       <div class="container">
        <div class="navbar-wrap">
-        <button class="menu-button navbar__menu-button">
+        <!----<button class="menu-button navbar__menu-button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
-        </button>
+          
+        </button>-->
+        <div class='navbar__close' id='closer'></div>
         <div class="logo navbar__logo">
           <strong class="logo__text">Сайт-портфолио</strong>
-          <span class="logo__description">Сайт веб-разработчика Карпова александра</span>
+          <span class="logo__description">Сайт портфолио веб-разработчика</span>
         </div>
          <!-- /.logo navbar__logo -->
         <div class="navbar__landline">
@@ -50,20 +53,86 @@
   <!-- /.navbar -->
   <div class="hero">
     <div class="container">
-     <h1 class="hero__title">
-      Здравствуйте, меня зовут Джон Доу, и я
-     </h1>
-     <span class="hero__subtitle">ПОЛНЫЙ СТЕК ВЕБ-РАЗРАБОТЧИК</span>
-     <h1 class="hero__title">
-      создание современного и отзывчивого <br> веб-приложения
-     </h1>
-     <button class="button hero__button">
-       заказать провод
-     </button>
+      <div class="hero__title-wrap">
+        <h1 class="hero__title">
+          Здравствуйте, меня зовут Александр Карпов, и я
+        </h1>
+        <span class="hero__subtitle">ПОЛНЫЙ СТЕК ВЕБ-РАЗРАБОТЧИК</span>
+        <h1 class="hero__title">
+          создание современного и отзывчивого веб-приложения
+        </h1>
+      </div>
     </div>
-   </div>
+  </div>
    <!-- /.hero -->
  </header>
  <!-- /.header -->
+ <main>
+   <section class="features section">
+     <div class="container">
+       <h2 class="section-title section__title">Вот что я делаю</h2>
+       <div class="features-block" id="features">
+         <div class="features-block__item">
+           <i class="features-block__image fa fa-newspaper-o fa-3x"  aria-hidden="true"></i>
+           <!-- /.feature-block__image -->
+           <h3 class="features-block__title">Верстка по PSD макету</h3>
+           <!-- /.feature-block__title -->
+           <p class="fiatures-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+           <!-- /.fiature-block__text -->
+         </div>
+         <!-- /.feature-block__item -->
+         <div class="features-block__item">
+           <i class="features-block__image fa fa-mobile fa-3x" aria-hidden="true"></i>
+           <!-- /.feature-block__image -->
+           <h3 class="features-block__title">Адаптивная верстка</h3>
+           <!-- /.feature-block__title -->
+           <p class="fiatures-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+           <!-- /.fiature-block__text -->
+         </div>
+         <!-- /.feature-block__item -->
+         <div class="features-block__item">
+           <i class="features-block__image fa fa-code fa-3x" aria-hidden="true"></i>
+           <!-- /.feature-block__image -->
+           <h3 class="features-block__title">Веб-программирование</h3>
+           <!-- /.feature-block__title -->
+           <p class="fiatures-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+           <!-- /.fiature-block__text -->
+         </div>
+         <!-- /.feature-block__item -->
+         <div class="features-block__item">
+           <i class="features-block__image fa fa-internet-explorer fa-3x" aria-hidden="true"></i>
+           <!-- /.feature-block__image -->
+           <h3 class="features-block__title">Размещение на хостинке</h3>
+           <!-- /.feature-block__title -->
+           <p class="fiatures-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+           <!-- /.fiature-block__text -->
+         </div>
+         <!-- /.feature-block__item -->
+       </div>
+       <!-- /.features-block -->
+     </div>
+   </section>
+   <!-- /.features -->
+   <section class="section catalog">
+     <div class="container">
+       <h2 class="section-title section__title">Мои работы</h2>
+       <div class="catalog-block">
+         <div class="catalog-card catalog__card">
+           <img src="img/catalog/catalog-1.jpg" alt="" class="catalog-card__image">
+           <h3 class="catalog-card__name">Название</h3>
+           <p class="catalog-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+         <div class="catalog-card catalog__card">
+           <img src="img/catalog/catalog-2.jpg" alt="" class="catalog-card__image">
+           <h3 class="catalog-card__name">Название</h3>
+           <p class="catalog-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+       </div>
+     </div>
+     <!-- /.container -->
+   </section>
+   <!-- /.section catalog -->
+ </main>
+ <script src="js/gamburger.js"></script>
 </body>
 </html>

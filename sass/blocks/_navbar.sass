@@ -25,6 +25,58 @@
     text-decoration: none
     font-size: 14px
     color: $text-color-light
+  //=-----------------------------------------   
+  &__close  
+    width: 35px
+    height: 35px
+    position: relative
+    border-bottom: 4px solid $primary
+    box-sizing: border-box
+    transition: all .5s
+    cursor: pointer
+    overflow: hidden
+    &:before
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      content: ""
+      display: block
+      height: 4px
+      background: $primary
+      transition: all .5s
+    &:after
+      position: absolute
+      left: 0
+      right: 0
+      top: 50%
+      content: ""
+      display: block
+      height: 4px
+      background: $primary
+      transition: transform .5s, width 2s
+    &-active
+      border: 0
+      &:before
+        content: ''
+        display: block
+        width: 100%
+        transform: rotate(45deg)
+        background: red
+        top: 100%
+        margin-top: -55%
+        left: 0
+        margin-left: -0%
+      &:after
+        content: ""
+        display: block
+        width: 100%
+        transform: rotate(-45deg)
+        background: red
+        top: 100%
+        margin-top: -55%
+        left: 0     
+  //---------------------------------------------      
 .menu
   position: fixed
   z-index: 99
@@ -34,9 +86,9 @@
   width: 100%
   background-color: $primary
   color: #fff
-  transition: 0.2s
-  transform: translateY(0%)
-  opacity: 1
+  transition: 0.4s
+  transform: translateY(-200%)
+  opacity: 0
   &_active
     transform: translateY(0)
     opacity: 1
@@ -86,6 +138,8 @@
   .navbar
      &__mobile, &__landline
        display: none
+     &__close
+       left: 25px 
 @media (max-width: 576px)
   .logo
     display: none
