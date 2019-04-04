@@ -14,10 +14,10 @@
       <div class="container">
         <nav class="menu__nav">
           <a href="#home" class="menu__link">Главная</a>
-          <a href="#features" class="menu__link">Предложения</a>
-          <a href="#catalog" class="menu__link">Каталог</a>
-          <a href="#price" class="menu__link">Цены и виды продукции</a>
-          <a href="#steps" class="menu__link">Этапы работ</a>
+          <a href="#features" class="menu__link">Услуги</a>
+          <a href="#catalog" class="menu__link">Мои работы</a>
+          <a href="#skills" class="menu__link">Навыки</a>
+          <a href="#offer" class="menu__link">Ваши предложения</a>
           <a href="#reviews" class="menu__link">Отзывы</a>
           <a href="#factory" class="menu__link">О производстве</a>
           <a href="#contacts" class="menu__link">Контакты</a>
@@ -68,11 +68,11 @@
  </header>
  <!-- /.header -->
  <main>
-   <section class="features section">
+   <section class="features section" id="features">
      <div class="container">
        <h2 class="section-title section__title">Вот что я делаю</h2>
        <div class="features-block" id="features">
-         <div class="features-block__item">
+         <div class="features-block__item" data-anime="left">
            <i class="features-block__image fa fa-newspaper-o fa-3x"  aria-hidden="true"></i>
            <!-- /.feature-block__image -->
            <h3 class="features-block__title">Верстка по PSD макету</h3>
@@ -81,7 +81,7 @@
            <!-- /.fiature-block__text -->
          </div>
          <!-- /.feature-block__item -->
-         <div class="features-block__item">
+         <div class="features-block__item" data-anime="left">
            <i class="features-block__image fa fa-mobile fa-3x" aria-hidden="true"></i>
            <!-- /.feature-block__image -->
            <h3 class="features-block__title">Адаптивная верстка</h3>
@@ -90,7 +90,7 @@
            <!-- /.fiature-block__text -->
          </div>
          <!-- /.feature-block__item -->
-         <div class="features-block__item">
+         <div class="features-block__item" data-anime="right">
            <i class="features-block__image fa fa-code fa-3x" aria-hidden="true"></i>
            <!-- /.feature-block__image -->
            <h3 class="features-block__title">Веб-программирование</h3>
@@ -99,7 +99,7 @@
            <!-- /.fiature-block__text -->
          </div>
          <!-- /.feature-block__item -->
-         <div class="features-block__item">
+         <div class="features-block__item" data-anime="right">
            <i class="features-block__image fa fa-internet-explorer fa-3x" aria-hidden="true"></i>
            <!-- /.feature-block__image -->
            <h3 class="features-block__title">Размещение на хостинке</h3>
@@ -113,7 +113,7 @@
      </div>
    </section>
    <!-- /.features -->
-   <section class="section catalog">
+   <section class="section catalog" id="catalog">
      <div class="container">
        <h2 class="section-title section__title">Мои работы</h2>
        <div class="catalog-block">
@@ -131,8 +131,82 @@
      </div>
      <!-- /.container -->
    </section>
+   <section class="section blog-list" id="skills">
+    <div class="container">
+      <h2 class="section-title section__title">Мои навыки</h2>
+     <div class="blog-list">
+       <div class="blog-list-card blog-list__card">
+         <div class="blog-list-card__wrap">
+          <canvas id="canvas" class="blog-list-card__canvas" width="250px" height="250px"></canvas>
+        </div>
+         <!-- /.blog-list__image -->
+         <div class="blog-list__text">
+          <i class="fa fa-html5" aria-hidden="true"></i>
+         </div>
+         <!-- /.blog-list__text -->
+       </div>
+       <div class="blog-list-card blog-list__card">
+         <div class="blog-list-card__wrap">
+          <canvas id="canvas2" class="blog-list-card__canvas" width="250px" height="250px"></canvas>
+          </div>
+        <!-- /.blog-list__image -->
+        <div class="blog-list__text">
+          <i class="fa fa-css3" aria-hidden="true"></i>
+        </div>
+        <!-- /.blog-list__text -->
+      </div>
+      <div class="blog-list-card blog-list__card">
+        <div class="blog-list-card__wrap">
+       <canvas id="canvas3" class="blog-list-card__canvas" width="250px" height="250px"></canvas>
+       </div>
+     <!-- /.blog-list__image -->
+       <div class="blog-list__text">javaScript</div>
+     <!-- /.blog-list__text -->
+     </div>
+     <div class="blog-list-card blog-list__card">
+       <div class="blog-list-card__wrap">
+      <canvas id="canvas4" class="blog-list-card__canvas" width="250px" height="250px"></canvas>
+      </div>
+   <!-- /.blog-list__image -->
+      <div class="blog-list__text">PHP</div>
+   <!-- /.blog-list__text -->
+    </div>
+       
+       <!-- /.blog-list-card blog-list__card -->
+     </div>
+     <!-- /.blog-list -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section blog -->
    <!-- /.section catalog -->
+   <section class="offer bg-secondary" id="offer">
+     <div class="container">
+       <div class="offer-block offer__block">
+        <h2 class="section-title section__title">Написать сообщение</h2>
+        <span class="offer__subtitle">Если у вас есть какие-нибудь предложения можете мне отправить письмо</span>
+        <form action="#" class="form offer__form">
+          <div class="form__row">
+            <div class="form__group"  data-anime="top"> 
+              <input type="text" class="input form__input" placeholder="Ваше имя">
+            </div>
+            <div class="form__group" data-anime="top">
+              <input type="mail" class="input form__input" placeholder="Email">
+            </div>
+            <div class="form__group" data-anime="bottom">
+              <textarea type="text" class="textarea form__input" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form__group" data-anime="bottom">
+              <input type="submit" class="form__button" value="Отправить">
+            </div>
+          </div>
+        </form>
+       </div>
+     </div>
+     <!-- /.container -->
+   </section>
+   <!-- /.offer -->
  </main>
- <script src="js/gamburger.js"></script>
+ <script src="js/main.js"></script>
 </body>
 </html>

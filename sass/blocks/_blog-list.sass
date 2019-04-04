@@ -1,0 +1,33 @@
+.blog
+  &-list  
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &-card
+      &__wrap
+        height: 250px
+        width: 250px     
+        border: 1px solid rgba(#510bba, 0.1)
+        box-shadow: 0 5px 5px rgba(0,0,0, 0.1)
+        margin: 20px 20px
+        &__canvas
+          display: none
+          &-active
+            display: block  
+    &__text
+        display: flex
+        justify-content: center
+        text-align: center
+        min-height: 80px 
+        color: $text-color
+        font-size: 30px
+        +bold
+@media (max-width: 1199px)
+  .blog
+    &-list 
+      justify-content: space-around
+    &-card
+      margin-right: 30px
+      margin-left: 30px
+          
+

@@ -16,6 +16,7 @@ img
     +bold
   &__title
     margin-bottom: 100px 
+    margin-top: 50px
 .button-o
   border: 2px solid $primary
   padding: 17px 22px  
@@ -33,3 +34,29 @@ img
   background-color: $primary
   color: #fff
   +bold
+.bg-secondary
+  background: $bg-secondary
+.input  
+  height: 40px
+  margin-bottom: 15px
+.textarea
+  height: 140px
+  margin-bottom: 15px
+[data-anime]
+  opacity: 0
+  transition: .3s
+[data-anime="left"]
+    transform: translate3d(-50px, 0, 0) 
+  
+[data-anime="right"]
+    transform: translate3d(50px, 0px, 0px)   
+
+[data-anime="top"]
+    transform: translate3d(0px, -50px, 0px)         
+
+[data-anime="bottom"]
+    transform: translate3d(0px, 50px, 0px) 
+
+[data-anime].animate
+  opacity: 1  
+  transform: translate3d(0px, 0px, 0px)
