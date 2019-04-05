@@ -1,0 +1,94 @@
+.footer
+  padding: 40px 0
+  background-color: #262626
+  color: #ffffff
+  &-block
+     display: flex
+     justify-content: space-between
+  a 
+   color: #fff 
+   text-decoration: none 
+  &__title
+    margin-top: 8px
+    margin-bottom: 8px
+    font-size: 18px
+    text-transform: uppercase
+    +bold  
+
+  &__subtitle
+    display: block
+    margin-bottom: 48px
+  &__heart
+    color: #ef5255
+    display: inline-block
+    font-size: 19px !important
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+    transform-origin: 50% 50% 0
+    vertical-align: middle
+    line-height: 27px !important
+    //animation: 1500ms ease 3s normal none 1 running pulse
+    animation: pulse  5s normal 2s ease 
+    animation-iteration-count: infinite
+    @keyframes pulse
+      0% 
+        transform: scaleX(1) scaleY(1)
+      10% 
+          transform: scaleX(0.85) scaleY(0.85)
+      20% 
+          transform: scaleX(1) scaleY(1)
+      30% 
+          transform: scaleX(0.85) scaleY(0.85)
+      40% 
+          transform: scaleX(1) scaleY(1)
+      50% 
+          transform: scaleX(0.85) scaleY(0.85)
+      60% 
+          transform: scaleX(1) scaleY(1)
+      70% 
+          transform: scaleX(0.85) scaleY(0.85)
+      80% 
+          transform: scaleX(1) scaleY(1)
+      90% 
+          transform: scaleX(0.85) scaleY(0.85)
+      100% 
+          transform: scaleX(1) scaleY(1)
+
+  &__copy
+    color: #767676
+  &__contacts
+    text-align: right
+  &__phone
+    display: block
+    margin-bottom: 20px  
+    font-size: 20px
+    +bold 
+  &__mail  
+    display: block
+    margin-bottom: 20px
+  &-social
+    &__link
+      margin: 10px
+    &__icon
+      font-size: 30px
+      border: 1px solid #3c3c3c
+      padding: 15px
+      color: #3c3c3c
+      border-radius: 5px
+      &:hover
+        border: 1px solid #fff
+        color: #fff
+@media (max-width: 768px)
+  .footer
+    &-block
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__contacts
+      margin-top: 30px
+      text-align: center 
+    &-social   
+       &__icon
+         font-size: 25px
+         margin-top: 20px
+        
+
