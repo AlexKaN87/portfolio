@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Портфолио</title>
+  <title>AlexKaN87</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,15 +27,11 @@
   <div class="navbar">
       <div class="container">
        <div class="navbar-wrap">
-        <!----<button class="menu-button navbar__menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          
-        </button>-->
         <div class='navbar__close' id='closer'></div>
         <div class="logo navbar__logo">
-          <strong class="logo__text">Сайт-портфолио</strong>
+          <div class="logo__icon">
+              <img src="img/logo.png" alt="">
+          </div>
           <span class="logo__description">Сайт портфолио веб-разработчика</span>
         </div>
          <!-- /.logo navbar__logo -->
@@ -116,14 +113,23 @@
        <h2 class="section-title section__title">Мои работы</h2>
        <div class="catalog-block">
          <div class="catalog-card catalog__card">
-           <img src="img/catalog/catalog-1.jpg" alt="" class="catalog-card__image">
-           <h3 class="catalog-card__name">Название</h3>
-           <p class="catalog-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <div class="catalog-card__image">
+            <img src="img/catalog/work1.png" alt="" >
+          </div>  
+          <div class="catalog-card__text">
+              <h3 class="catalog-card__name">Работа № 1</h3>
+              <p class="catalog-card__title">Александр Солженицын и Пензенский край</p>
+          </div>
          </div>
          <div class="catalog-card catalog__card">
-           <img src="img/catalog/catalog-2.jpg" alt="" class="catalog-card__image">
-           <h3 class="catalog-card__name">Название</h3>
-           <p class="catalog-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+           <div class="catalog-card__image">
+            <img src="img/catalog/work2.png" alt="" >
+          </div>  
+          <div class="catalog-card__text">
+              <h3 class="catalog-card__name">Работа № 2</h3>
+              <p class="catalog-card__title">Александр Солженицын и Пензенский край</p>
+          </div>
          </div>
        </div>
      </div>
@@ -182,7 +188,7 @@
      <div class="container">
        <div class="offer-block offer__block">
         <h2 class="section-title section__title">Написать сообщение</h2>
-        <span class="offer__subtitle">Если у вас есть какие-нибудь предложения можете мне отправить письмо</span>
+        <span class="offer__subtitle">Если у вас есть какие-нибудь предложения, можете мне отправить письмо</span>
         <form action="#" class="form offer__form">
           <div class="form__row">
             <div class="form__group"  data-anime="top"> 
@@ -242,6 +248,33 @@
   </div>
   <!-- /.container -->
 </footer>
+
+  <div class="popup fade">
+      <div class="popup-block">
+      <div class="popup__close">&times;</div>
+      <h2 class="section-title section__title popup__title">Написать сообщение</h2>
+        <span class="popup__subtitle">Если у вас есть какие-нибудь предложения, можете мне отправить письмо</span>
+        <form action="#" class="form popup__form">
+          <div class="form__row">
+            <div class="form__group"  data-anime="top"> 
+              <input type="text" class="input form__input" placeholder="Ваше имя">
+            </div>
+            <div class="form__group" data-anime="top">
+              <input type="mail" class="input form__input" placeholder="Email">
+            </div>
+            <div class="form__group" data-anime="bottom">
+              <textarea type="text" class="textarea form__input" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form__group" data-anime="bottom">
+              <input type="submit" class="form__button" value="Отправить">
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+
+
+
 <!-- /.footer -->
  <script src="js/main.js"></script>
 </body>

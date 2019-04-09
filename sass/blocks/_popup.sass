@@ -1,0 +1,85 @@
+.fade 
+  animation-name: fade
+  animation-duration: 2.5s
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 2.5s
+@-webkit-keyframes fade 
+  from 
+    opacity:.1
+  to 
+    opacity: 1
+@keyframes fade
+  from 
+    opacity: .1
+  to 
+    opacity: 1
+.popup
+  display: none
+  position: fixed
+  left: 50%
+  top: 150px
+  width: 600px
+  transform: translate(-50%)
+  &-block 
+    position: relative
+    background-color: #f1f1f1
+    padding: 0 80px 80px 80px
+    border: 1px solid rgba(#510bba, 0.1)
+    box-shadow: 0 5px 5px rgba(0,0,0, 0.1)
+  &__close
+    position: absolute
+    right: 15px
+    top: 0  
+    font-size: 46px
+    color: red
+    cursor: pointer
+  &__title
+    display: block
+  &__subtitle
+    display: block
+    font-size: 21px
+    margin-bottom: 48px
+    text-align: center  
+  .form
+    &__row
+      display: flex
+      justify-content: space-between 
+      align-items: center
+      flex-direction: column  
+    &__group
+      width: 100%
+      margin: 0 auto  
+    &__input
+      width: 100% 
+      border: 1px solid rgba(#510bba, 0.1)
+      padding: 10px 
+      color: $text-color
+      +bold
+    &__button
+      width: 100%
+      opacity: .7
+      border: none
+      text-transform: uppercase
+      padding: 10px 0px  
+      background-color: #262626
+      border: 2px solid #3c3c3c
+      color: #fff
+      cursor: pointer
+      +bold  
+      &:hover
+        background-color: #ffffff
+        color: $primary
+        border: 2px solid $primary
+        box-shadow: 0 5px 5px rgba(0,0,0, 0.1)
+@media (max-width: 776px)        
+  .popup
+    width: 350px
+    top: 90px
+    &-block 
+      padding-bottom: 30px
+    &__title
+      margin-bottom: 20px
+      font-size: 18px
+    &__subtitle
+      margin-top: 10px
+      font-size: 16px

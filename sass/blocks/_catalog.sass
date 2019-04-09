@@ -5,15 +5,16 @@
     justify-content: space-between
     flex-wrap: wrap 
   &__card
-    margin-bottom: 30px    
+    margin-bottom: 30px
   &-card
+    background-color: #fff
     max-width: 570px
     position: relative
-    color: #fff
     &:hover
       .catalog-card__name
         transform: translateY(-20px)
-      .catalog-card__text
+        opacity: 1
+      .catalog-card__title
         transform: translateY(20px)
         opacity: 1
     &:before, &:after
@@ -25,33 +26,44 @@
       right: 5%
       transition: 0.2s
     &:before  
-      border-top: solid 2px
-      border-bottom: solid 2px
+      border-top: solid 2px $primary
+      border-bottom: solid 2px $primary
       transform: scaleX(0)
     &:after
-      border-left: solid 2px
-      border-right: solid 2px
+      border-left: solid 2px $primary
+      border-right: solid 2px $primary
       transform: scaleY(0)  
     &:hover:before, &:hover:after
       transform: scale(1)
+    &__text
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #fff
+      text-shadow: 2px 2px 2px #000
+      top: -50%
+      +bold
     &__name
       position: absolute
-      top: 45%
-      left: 40%
+      opacity: 0
       text-transform: uppercase
       transition: 0.2s
       transform: translateY(0)
-    &__text
+      color: #fff
+      +bold
+    &__title
       position: absolute
-      top: 45%
-      left: 12%
+      color: #fff
       font-size: 18px
-      text-align: center
       opacity: 0
       transition: 0.2s
       transform: translateY(0)
+      color: $primary
+      +bold
     &__image
       display: block
+
 @media (max-width: 1199px)
   .catalog
     &-block
@@ -60,6 +72,7 @@
       max-width: 470px
 @media (max-width: 768px)      
   .catalog
-  &__text
-    font-size: 14px
-      left: 5%
+    &-card
+      &__title
+        font-size: 14px
+  
